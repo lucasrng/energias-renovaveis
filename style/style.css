@@ -1,0 +1,287 @@
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    color: #505050;
+    font-family: 'Roboto', sans-serif;
+}
+
+main h1 {
+    margin-bottom: 21px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    
+}
+
+/* Geral */
+
+/* Cabeçalho */
+
+header {
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    padding: 23px 0;
+}
+
+header h1 {
+    height: 36px;
+}
+
+header .container {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.menu ul {
+    font-size: 15px;
+
+}
+
+.menu ul li {
+    display: inline;
+    margin-left: 22px;
+}
+
+.menu a {
+    color: #505050;
+    font-weight: bold;
+    padding: 7px 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    transition: 0.8s;
+}
+
+#onpage {
+    background-color: #89c8fd;
+    border-radius: 6px;
+    color: white;
+}
+
+/* Cabeçalho */
+
+/* Slide */
+
+.slider {
+    border-radius: 50px;
+    overflow: hidden;
+    width: 960px;
+    margin-bottom: 50px;
+}
+
+.slider figure div, .slider figure img {
+    float: left;
+}
+
+.slide {
+    position: relative;
+}
+
+.slider figure {
+    position: relative;
+    width: 400%;
+    animation: 15s slidy infinite;
+}
+
+.legenda {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    color: white;
+    padding-top: 20px;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    text-align: center;
+    width: 557px;
+    height: 104px;
+}
+
+.legenda h1, .legenda p {
+    vertical-align: center;
+}
+
+.legenda h1 {
+    font-size: 28px;
+}
+
+.legenda p {
+    font-size: 20px;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    12.5% {
+        left: -100%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    37.5% {
+        left: -200%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    62.5% {
+        left: -300%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    87.5% {
+        left: 0%;
+    }
+
+}
+
+/* Slide */
+
+/* Conteúdo */
+
+figure a {
+    color: #698BFF;
+    float: right;
+    text-decoration: none;
+}
+
+section img {
+    border-radius: 20px;
+}
+
+figcaption {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.texto {
+    margin-bottom: 82px;
+    text-align: justify;
+}
+.esquerda, .direita {
+    width: 458px;
+    margin-bottom: 44px;
+}
+.esquerda {
+    float: left;
+}
+
+.direita {
+    float: right;
+}
+
+.esquerda a, .direita a {
+    margin-top: 15px;
+    margin-right: 0;
+}
+
+.baixo {
+    margin-bottom: 88px;
+}
+
+/* Conteúdo */
+
+/* Rodapé */
+
+footer {
+    clear: both;
+    position: relative;
+}
+
+footer hr {
+    border: 1px solid #f4f4f4;
+    margin-bottom: 26px;
+    margin-top: 88px;
+}
+
+footer li {
+    font-weight: bold;
+    list-style: none;
+}
+
+#sobre {
+    margin-bottom: 20px;
+    width: 650px;
+}
+
+.rodape {
+    margin-top: 26px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Rodapé */
+
+/* Demais Páginas */
+
+.energia {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.energia + h1 {
+    font-size: 34px;
+}
+
+.curiosidades {
+    background-color: #BAEB6C;
+    border-radius:10px;
+    color: white;
+    margin-bottom: 21px;
+    padding: 7px;
+    text-align: center;
+}
+
+.geral {
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 21px;
+    padding: 8px;
+}
+
+.numero {
+    background-color: #BAEB6C;
+    border-radius: 6px;
+    color: white;
+    float: left;
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 17px 0;
+    text-align: center;
+    width: 74px;
+}
+
+.geral p {
+    margin: auto 27px;
+    width: 824px;
+}
+
+/* Demais Páginas */
