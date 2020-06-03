@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    border: none;
 }
 
 body {
@@ -76,7 +76,7 @@ header .container {
 
 /* Cabeçalho */
 
-/* Slide */
+/* Carrossel */
 
 .slider {
     border-radius: 50px;
@@ -159,48 +159,41 @@ header .container {
 
 }
 
-/* Slide */
+/* Carrossel */
 
 /* Conteúdo */
 
-figure a {
+.painel img, section img {
+    border-radius: 20px;
+}
+.painel {
+    text-align: center;
+    list-style: none;
+}
+
+.painel li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 44px;
+    width: 458px;
+}
+
+.painel p, .painel h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.painel a {
     color: #698BFF;
     float: right;
     text-decoration: none;
 }
 
-section img {
-    border-radius: 20px;
-}
-
-figcaption {
-    margin-top: 15px;
-    text-align: justify;
-}
-
 .texto {
     margin-bottom: 82px;
     text-align: justify;
-}
-.esquerda, .direita {
-    width: 458px;
-    margin-bottom: 44px;
-}
-.esquerda {
-    float: left;
-}
-
-.direita {
-    float: right;
-}
-
-.esquerda a, .direita a {
-    margin-top: 15px;
-    margin-right: 0;
-}
-
-.baixo {
-    margin-bottom: 88px;
 }
 
 /* Conteúdo */
@@ -215,7 +208,6 @@ footer {
 footer hr {
     border: 1px solid #f4f4f4;
     margin-bottom: 26px;
-    margin-top: 88px;
 }
 
 footer li {
@@ -223,9 +215,8 @@ footer li {
     list-style: none;
 }
 
-#sobre {
-    margin-bottom: 20px;
-    width: 650px;
+footer .texto {
+    max-width: 80%;
 }
 
 .rodape {
@@ -247,6 +238,10 @@ footer li {
 
 .energia + h1 {
     font-size: 34px;
+}
+
+.texto {
+    margin-bottom: 74px;
 }
 
 .curiosidades {
@@ -284,4 +279,113 @@ footer li {
     width: 824px;
 }
 
+.outros {
+    display: none;
+}
+
 /* Demais Páginas */
+
+/* Responsivo */
+
+@media (max-width: 959px) {
+    .container {
+        width: 96%;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header h1 img {
+        max-width: 50%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .slider {
+        border-radius: 30px;
+    }
+
+    .slider, .slide img {
+        width: 100%;
+    }
+
+    .slide {
+        width: 25%;
+    }
+
+    .legenda {
+        display: none;
+    }
+
+    .painel li {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 44px;
+        width: 100%;
+    }
+
+    .painel img {
+        width: 100%;
+    }
+
+    .energia {
+        float: unset;
+        margin-left: 0;
+    }
+
+    .energia img {
+        width: 100%;
+    }
+
+    .numero {
+        background-color: #BAEB6C;
+        border-radius: 6px;
+        color: white;
+        float: left;
+        font-size: 44px;
+        font-weight: bold;
+        margin: auto;
+        padding: 17px 0;
+        text-align: center;
+        width: 100px;
+    }
+
+    .outros {
+        display: block;
+    }
+    
+    .outros ul {
+        text-align: center;
+        font-size: 15px;
+        list-style: none;
+    }
+    
+    .outros ul li {
+        background-color: #89c8fd;
+        border-radius: 7px;
+        margin: 5px 0;
+        padding: 10px;
+    }
+    
+    .outros a {
+        color: white;
+        font-weight: bold;
+        padding: 7px 15px;
+        text-decoration: none;
+    }
+    
+    .outros a:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        transition: 0.8s;
+    }
+}
+
+/* Responsivo */
